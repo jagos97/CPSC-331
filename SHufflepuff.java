@@ -1,3 +1,5 @@
+package cpsc331.A1;
+
 import java.util.InputMismatchException;
 
 class SHufflepuff{
