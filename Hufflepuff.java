@@ -31,7 +31,7 @@ public class Hufflepuff{
     }  
 
     public static int eval(int n){
-    //Assertion: A non-negative integer n has been given as input.
+    //Assertion: A non-negative integer n has been given as input
         if (n == 0) {
         //Assertion: n = 0
             return 10;
