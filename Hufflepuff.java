@@ -57,7 +57,7 @@ public class Hufflepuff{
             int i = 3;
 
             //bound function: 
-            //loop invariants:
+            //loop invariants: i is an integer such that 3 ≤ i ≤ n.
             while (i < n) {
                 int shazam = 4 * kadabra - 6 * abra + 4 * pocus - hocus;
                 hocus = pocus;
