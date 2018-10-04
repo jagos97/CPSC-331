@@ -10,6 +10,8 @@ public class Hufflepuff{
     // main function that reads input from the command line and if input n
     // is given then eval will execute and print it out on command line.
     public static void main(String[] args){
+
+        if (args.length == 1){
          
         try{
             int n = Integer.parseInt(args[0]);
@@ -18,14 +20,16 @@ public class Hufflepuff{
             catch (NumberFormatException e){
                 System.out.println("Silly muggle! One integer input is required.");
             }
-            catch (ArrayIndexOutOfBoundsException e){
-                System.out.println("Silly muggle! One integer input is required.");
-            }
             catch (IllegalArgumentException e){
                 //Assertion: n < 0
-                System.out.println("Silly muggle! The input integer cannot be negative.");
+                System.out.println("Silly muggle! The integer input cannot be negative.");
             }
 
+        }
+
+        else{
+            System.out.println("Silly muggle! One integer input is required.");
+        }
     }  
 
     public static int eval(int n){
