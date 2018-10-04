@@ -13,13 +13,7 @@ public class Hufflepuff{
          
         try{
             int n = Integer.parseInt(args[0]);
-            if (n < 0 ){
-                //Assertion: n < 0
-                System.out.println("Silly muggle! The input integer cannot be negative.");
-            }
-            else{
                 System.out.println(eval(n));
-            }
         }
             catch (NumberFormatException e){
                 System.out.println("Silly muggle! One integer input is required.");
@@ -27,12 +21,20 @@ public class Hufflepuff{
             catch (ArrayIndexOutOfBoundsException e){
                 System.out.println("Silly muggle! One integer input is required.");
             }
+            catch (IllegalArgumentException e){
+                //Assertion: n < 0
+                System.out.println("Silly muggle! The input integer cannot be negative.");
+            }
 
     }  
 
     public static int eval(int n){
     //Assertion: A non-negative integer n has been given as input
-        if (n == 0) {
+        if(n < 0){
+            throw new IllegalArgumentException();
+        }
+
+        else if (n == 0) {
         //Assertion: n = 0
             return 10;
         }

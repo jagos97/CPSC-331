@@ -16,18 +16,17 @@ class SHufflepuff{
          
         try{
             int n = Integer.parseInt(args[0]);
-            if (n < 0 ){
-                //Assertion: n < 0
                 System.out.println("Silly muggle! The input integer cannot be negative.");
-            }
-            else{
                 System.out.println(sHuffle(n));
             }
-        }
+        
             catch (NumberFormatException e){
                 System.out.println("Silly muggle! One integer input is required.");
             }
             catch (ArrayIndexOutOfBoundsException e){
+                System.out.println("Silly muggle! One integer input is required.");
+            }
+            catch (IllegalArgumentException e){
                 System.out.println("Silly muggle! One integer input is required.");
             }
 
@@ -35,7 +34,9 @@ class SHufflepuff{
     protected static int sHuffle(int n){
         // Asertion: n is an integer input such that n >= 0
     
-        
+        if (n < 0){
+            throw new IllegalArgumentException();
+        }
         if(n == 0){
             //Assertion: n == 0
             return 10;
