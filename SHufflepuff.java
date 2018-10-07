@@ -36,11 +36,13 @@ class SHufflepuff{
 
     }  
     protected static int sHuffle(int n){
-        // Asertion: n is an integer input such that n >= 0
-    
+        //Asertion: n is an integer input
         if (n < 0){
+            //Asertion: n < 0
             throw new IllegalArgumentException();
         }
+        // Asertion: n is an integer input such that n >= 0
+        
         else if(n == 0){
             //Assertion: n == 0
             return 10;

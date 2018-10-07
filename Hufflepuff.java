@@ -33,8 +33,9 @@ public class Hufflepuff{
     }  
 
     public static int eval(int n){
-    //Assertion: A non-negative integer n has been given as input
+    //Asertion: n is an integer input
         if(n < 0){
+            //Asertion: n < 0
             throw new IllegalArgumentException();
         }
 
@@ -62,8 +63,12 @@ public class Hufflepuff{
             int kadabra = 7;
             int i = 3;
 
-            //bound function: 
-            //loop invariants: i is an integer such that 3 ≤ i ≤ n.
+            //bound function: n - i
+            //loop invariants: 
+                            //1. n is an integer input such that n ≥ 4
+                            //2. i is an integer such that 3 ≤ i ≤ n
+                            //3. Abra is the ith -1 hufflepuff number
+		                    //4. Kadabra is the ith hufflepuff number
             while (i < n) {
                 int shazam = 4 * kadabra - 6 * abra + 4 * pocus - hocus;
                 hocus = pocus;
