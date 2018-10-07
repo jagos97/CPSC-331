@@ -1,3 +1,9 @@
+//Julio Agostini 30049674
+//Edmund Sayson 30047166
+//Shardar Quraishi 30045559
+
+
+
 package cpsc331.A1;
 
 import java.util.InputMismatchException;
@@ -42,7 +48,7 @@ class SHufflepuff{
             throw new IllegalArgumentException();
         }
         // Asertion: n is an integer input such that n >= 0
-        
+
         else if(n == 0){
             //Assertion: n == 0
             return 10;

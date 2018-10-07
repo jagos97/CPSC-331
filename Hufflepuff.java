@@ -1,3 +1,8 @@
+//Julio Agostini 30049674
+//Edmund Sayson 30047166
+//Shardar Quraishi 30045559
+
+
 package cpsc331.A1;
 
 public class Hufflepuff{
